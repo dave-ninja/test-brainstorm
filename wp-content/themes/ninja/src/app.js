@@ -28,7 +28,7 @@ jQuery(document).ready(function ($){
     $('.news-letter-form form').submit(function (e) {
         e.preventDefault()
         $('.news-letter-form .msg').text('')
-        let email = $('.news-letter-form input').val()
+        let email = $(this).find('input').val()
 
         if(validateEmail(email)) {
             $.ajax({
@@ -76,14 +76,4 @@ jQuery(document).ready(function ($){
         $(".mobile-menu").removeClass("show")
         $("body > .news-letter").removeClass("show")
     })
-
-    function hideShow() {
-        $(".show").removeClass('show')
-        $(".toggle span").removeClass('change')
-    }
-
-    /*$(".menu-item-has-children a").after().click(function (e) {
-        e.preventDefault()
-        console.log(e.target)
-    })*/
 })
