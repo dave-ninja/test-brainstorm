@@ -1,0 +1,4 @@
+wp-admin{
+	user: admin
+	pass: r363jLeR51wnx4j*0r
+}

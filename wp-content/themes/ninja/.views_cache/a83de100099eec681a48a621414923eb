@@ -1,0 +1,26 @@
+<?php get_header();?>
+
+<?php foreach(ninjaPosts(['product'],['publish','draft']) as $pr): ?>
+    <?php echo e(dump($pr->post_title)); ?>
+
+<?php endforeach; ?>
+
+<?php wp_reset_postdata(); // сброс?>
+
+<?php
+//$ins = ninjaInsert('ninja_dev', ['first_name' => 'koko', 'last_name' => 'jambo', 'email' => 'info@myninjadev.com', 'address' => 'melkumov']);
+//$res = ninjaSelect('ninja_dev', '*','','1');
+//$upd = ninjaUpdate('ninja_dev', [ 'first_name'=>'qweqweqwe','address'=>'cdevfrbgt' ], [ 'ID'=>2 ]);
+?>
+
+<div id="hero">
+	<div class="container d-flex align-items-center justify-content-center h-100">
+		<h1>Welcome to my shop</h1>
+        <div class="col">
+            <?php echo get_video_embed_code_by_url('https://www.youtube.com/watch?v=TlmDsU8GirU&list=LL-Hfp9zaEM119-nykKxKUNQ&index=1'); ?>
+
+        </div>
+	</div>
+</div>
+
+<?php get_footer();?>

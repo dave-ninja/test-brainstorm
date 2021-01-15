@@ -1,0 +1,92 @@
+{
+    "packages": [
+        {
+            "name": "tormjens/wp-blade",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tormjens/wp-blade.git",
+                "reference": "88335a3d0ebeb3ea92eef2eff8bbdb3b5280045a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tormjens/wp-blade/zipball/88335a3d0ebeb3ea92eef2eff8bbdb3b5280045a",
+                "reference": "88335a3d0ebeb3ea92eef2eff8bbdb3b5280045a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "xiaoler/blade": "^0.2.2"
+            },
+            "time": "2016-08-08T07:09:39+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "TorMorten\\View\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tor Morten Jensen",
+                    "email": "tormorten@tormorten.no"
+                }
+            ],
+            "description": "Use Blade templates in your WordPress theme",
+            "install-path": "../tormjens/wp-blade"
+        },
+        {
+            "name": "xiaoler/blade",
+            "version": "0.2.2",
+            "version_normalized": "0.2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/XiaoLer/blade.git",
+                "reference": "c09532871e148124b1e801eec91f81249e503d8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/XiaoLer/blade/zipball/c09532871e148124b1e801eec91f81249e503d8a",
+                "reference": "c09532871e148124b1e801eec91f81249e503d8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "time": "2015-10-24T14:05:20+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Xiaoler\\Blade\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scholer Liu",
+                    "email": "scholer_l@live.com"
+                }
+            ],
+            "description": "an independent version of laravel view template - blade",
+            "homepage": "http://0x1.im",
+            "install-path": "../xiaoler/blade"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": [
+        "tormjens/wp-blade",
+        "xiaoler/blade"
+    ]
+}
