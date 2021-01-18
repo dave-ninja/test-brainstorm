@@ -194,12 +194,12 @@ if (!function_exists('ninjaUpdate')) {
 }
 
 function setup_phpmailer_init( $phpmailer ) {
-    $phpmailer->From = 'info@children.am';
+    $phpmailer->From = '';
     $phpmailer->FromName = 'Admit NY';
-    $phpmailer->Host = 'smtp.zoho.com'; // for example, smtp.mailtrap.io
+    $phpmailer->Host = ''; // for example, smtp.mailtrap.io
     $phpmailer->Port = 587; // set the appropriate port: 465, 2525, etc.
-    $phpmailer->Username = 'info@children.am'; // your SMTP username
-    $phpmailer->Password = 'Planet517715!$&@'; // your SMTP password
+    $phpmailer->Username = ''; // your SMTP username
+    $phpmailer->Password = ''; // your SMTP password
     $phpmailer->SMTPAuth = true;
     $phpmailer->SMTPSecure = 'tls'; // preferable but optional
     $phpmailer->IsSMTP();
